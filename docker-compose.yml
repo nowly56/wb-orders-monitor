@@ -1,0 +1,8 @@
+services:
+  wb-bot:
+    build: .
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./orders.json:/app/orders.json
